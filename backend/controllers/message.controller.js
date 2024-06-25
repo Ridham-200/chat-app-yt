@@ -28,7 +28,7 @@ try {
     // this will run in parallel
 
     
-
+    await Promise.all([conversation.save(), newMessage.save()]);
 
     res.status(201).json(newMessage);
 
